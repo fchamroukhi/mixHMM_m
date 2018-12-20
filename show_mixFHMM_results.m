@@ -24,7 +24,6 @@ K = length(mixFHMM.param.w_k);
 
 colors = {'r','g','b','k','m','y','c','r','g','b','k','m','y','c'};
 figure('Position',[scrsz(4) scrsz(4)/2 550 scrsz(4)/2.15]);
-%clf(1)
 
 for k=1:K
     plot(t,data(mixFHMM.stats.klas==k,:)','color',colors{k})

@@ -56,7 +56,7 @@ else
         % 3. Initialisation de la matrice des transitions
         mixFHMM.param.A_k(:,:,k)  =  mixFHMM_init.trans_mat;
         if order_constraint
-            mixFHMM.mask.mask = mixFHMM_init.mask;
+            mixFHMM.stats.mask = mixFHMM_init.mask;
         end
         % 4. Initialisation des moyennes
         mixFHMM.param.mu_kr(:,k) = mixFHMM_init.mur;

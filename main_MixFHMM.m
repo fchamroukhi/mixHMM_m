@@ -30,6 +30,17 @@
 % type = {Ph.D. Thesis},
 % url ={https://chamroukhi.com/papers/FChamroukhi-Thesis.pdf}
 % }
+%
+% @article{Chamroukhi-FDA-2018,
+% 	Journal = {Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery},
+% 	Author = {Faicel Chamroukhi and Hien D. Nguyen},
+% 	Note = {DOI: 10.1002/widm.1298.},
+% 	Volume = {},
+% 	Title = {Model-Based Clustering and Classification of Functional Data},
+% 	Year = {2019},
+% 	Month = {to appear},
+% 	url =  {https://chamroukhi.com/papers/MBCC-FDA.pdf}
+% 	}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 clear 
@@ -42,8 +53,8 @@ K = 3;% number of clusters
 R = 3;% number of regimes (HMM states)
 
 % % options
-variance_type = 'common';
-%variance_type = 'free'; 
+%variance_type = 'common';
+variance_type = 'free'; 
 ordered_states = 1;
 total_EM_tries = 1;
 max_iter_EM = 1000;
